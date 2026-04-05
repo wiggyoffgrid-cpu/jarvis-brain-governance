@@ -1,15 +1,13 @@
+---
 # D-Master Build — Strategic Command Ledger
-
 **Version:** 1.0
 **Status:** Active — Living Document
 **Created:** April 4, 2026
 **Authority:** Wiggy (Eric Legault)
-**Last Audited:** April 4, 2026
-
+**Last Audited:** April 5, 2026 — Post-Neurologist audit remediation complete. All 5 previously known drift items resolved. Neurologist and Surgeon now active.
 ---
 
 ## Purpose
-
 The D-Master Build is the strategic command ledger for the Jarvis Brain. It is the third Authority — alongside D-07 Folder Map (physical truth) and D-02 Operational Index (registry). All three must agree. If they don't, the system is in drift.
 
 D-07 answers: **"What exists on disk?"**
@@ -21,7 +19,6 @@ This is the document you read when you need to understand the entire Jarvis Brai
 ---
 
 ## The Three Authorities Alignment Check
-
 Before any structural change, verify all three agree:
 
 | Authority | Document | Question It Answers |
@@ -37,14 +34,12 @@ Before any structural change, verify all three agree:
 ## Domain Strategic Ledger
 
 ### TIER 1 — WIGGY ONLY (Sacred/Bloodline)
-
 | Domain | ID | Status | Files | Owner | Access | Dependencies | Strategic Notes |
 |--------|-----|--------|-------|-------|--------|-------------|----------------|
 | People & Family | D-10 | ACTIVE | 76 XML cards, 15+ subfolders | Wiggy ONLY | MCP excluded, Tunnel 403 | Flask Jigsaw routing, people_index.py | Inlaws split into 4 subfolders April 3. Index updated April 4. No AI writes. Ever. |
 | Provisioner's Codex | D-11 | ACTIVE (separate project) | External | Wiggy | Separate Claude project | E:\THE PROVISIONERS CODEX\ | Not in Jarvis Brain. Cross-reference only. Codex rebuild on horizon list. |
 
 ### TIER 2 — WIGGY AUTHORITY, AI ASSISTS
-
 | Domain | ID | Status | Files | Owner | Access | Dependencies | Strategic Notes |
 |--------|-----|--------|-------|-------|--------|-------------|----------------|
 | Clients & CRM | D-12 | ACTIVE | 309 cards, 113 companies | Wiggy + AI assists | MCP read/write, Tunnel 403 (PII) | Flask Jigsaw routing, ape_index.py, quote system | Phone cleanup done April 3. 7 dupes merged. Tunnel blocks client cards (PII). MCP has full access. |
@@ -55,7 +50,6 @@ Before any structural change, verify all three agree:
 | Assets & Capital | D-17 | NOT BUILT | 0 | Wiggy | — | — | Company asset tracking. No timeline. |
 
 ### TIER 3 — AI OPERATIONAL
-
 | Domain | ID | Status | Files | Owner | Access | Dependencies | Strategic Notes |
 |--------|-----|--------|-------|-------|--------|-------------|----------------|
 | APE Equipment | D-20 | ACTIVE | 20 chunked XMLs | AI operational | MCP + Tunnel (open) + Flask | Equipment specs, quote system | Core product data. Accessible through all three doors. |
@@ -73,38 +67,35 @@ Before any structural change, verify all three agree:
 | Calendar & Schedules | D-32 | NOT BUILT | 0 | — | — | — | Events, birthdays, deadlines. Ideas Vault has calendar integration plan. |
 
 ### TIER 4 — SYSTEM
-
 | Domain | ID | Status | Files | Owner | Access | Dependencies | Strategic Notes |
 |--------|-----|--------|-------|-------|--------|-------------|----------------|
 | Models & Inference | D-40 | ACTIVE | 6 models, LoRA v13, training data | AI managed | MCP | llama-server b8639 | Gemma 4 E4B is champion. Dual 3090s on horizon for 70B+. |
-| Infrastructure & Config | D-41 | ACTIVE | Flask, llama-server, Docker, scripts, configs | AI managed | MCP | Everything | The plumbing. Includes brain server, cloudflared, MCP config as of April 4. |
+| Infrastructure & Config | D-41 | ACTIVE | Flask, llama-server b8639, Docker, Dashboard, acks, voices, searxng, scripts, Chatterbox-TTS-Server | AI managed | MCP | Everything | The plumbing. Brain server, cloudflared, MCP config active. llama.cpp.backup deleted April 5. Chatterbox-TTS-Server added (port 8004 — currently broken). Neurologist and Surgeon now active April 5. |
 | Knowledge & Extraction | D-42 | ACTIVE | 8 categories + chat history | AI managed | MCP, Tunnel (chat history 403) | Extraction pipeline | Chat history blocked on tunnel. |
-| Governance & Planning | D-43 | ACTIVE | D-Series (D-00–D-09), Ideas Vault, Handoff, Science Sheet, Command Library, Strategic Planning | AI managed (read), Wiggy (write) | MCP + Tunnel (open) | All governance decisions | Core. D-08, D-09, D-Master Build added April 4. |
-| Automation & Workers | D-44 | ACTIVE | Mason, Koonie stable, Gordon stable, scripts | AI managed | MCP | Boot sequence, task system | JARVIS_BRAIN_STARTUP.ps1 added April 4. Task Scheduler registered. |
-| Archives & Retired | D-45 | ACTIVE | 8 subfolders with manifest | AI managed | MCP + Tunnel (open) | — | Only grows. Things go in, they don't come out without Wiggy approval. |
+| Governance & Planning | D-43 | ACTIVE | D-Series (D-00–D-09), Ideas Vault, Handoff, Science Sheet v3, Command Library, Strategic Planning, Neurologist/Surgeon instructions, Grossmann setup | AI managed (read), Wiggy (write) | MCP + Tunnel (open) | All governance decisions | Core. D-08, D-09, D-Master Build added April 4. Neurologist and Surgeon now active April 5. |
+| Automation & Workers | D-44 | ACTIVE | Mason, Koonie stable, Gordon stable, scripts | AI managed | MCP | Boot sequence, task system | JARVIS_BRAIN_STARTUP.ps1 added April 4. Task Scheduler registered. Neurologist and Surgeon now active April 5. |
+| Archives & Retired | D-45 | ACTIVE | 13 subfolders with manifest | AI managed | MCP + Tunnel (open) | — | Only grows. Things go in, they don't come out without Wiggy approval. Updated April 5: 5 new subfolders registered (project_setup_docs, extraction_analysis, science_sheet_lineage, drive_audit_march26, openwebui_memory). |
 
 ---
 
 ## Governance Doctrines Status
-
 | ID | Name | Version | Status | Strategic Notes |
 |----|------|---------|--------|----------------|
-| D-00 | Domain Structure | v1.0 | Active | Master map. 26 domains, 4 tiers. Needs update: D-21 location says "TBD" but it's active. |
+| D-00 | Domain Structure | v1.0 | Active | Master map. 26 domains, 4 tiers. D-43 location corrected April 5, D-10 subfolder count corrected April 5. |
 | D-01 | Governance Charter | v1.0 | Active | Authority model. Solid. |
-| D-02 | Operational Index | v1.1 | Active | Registry. Needs update: D-08 still shows "Reserved." D-Master Build not listed. |
+| D-02 | Operational Index | v1.4 | Active | Registry. Updated April 5: version table corrected, D-45 count 8→13, D-41 Chatterbox added, D-43 new files registered. |
 | D-03 | Numbering Constitution | v1.0 | Active | Numbering rules. Solid. |
-| D-04 | Navigation Spine | v1.0 | Active | Cross-references. Solid. |
+| D-04 | Navigation Spine | v1.1 | Active | Cross-references. Updated April 5. |
 | D-05 | File Architecture | v1.0 | Active | Naming rules. Solid. |
 | D-06 | Revision Control | v1.0 | Active | Versioning. Solid. |
-| D-07 | Folder Map | v1.0 | Active | Physical truth. Needs update: missing D-08, brain server, cloudflared, config.yml, startup script. |
-| D-08 | MCP Access Protocol | v1.0 | Active | NEW April 4. Three doors, tier security, cache fix. |
-| D-09 | Quote Engine Playbook | v1.0 | Active | NEW April 4. AI quote pipeline — 5 steps, flex-gap architecture, 4 product lines. |
-| D-Master | Strategic Command Ledger | v1.0 | Active | NEW April 4. This document. Third Authority. |
+| D-07 | Folder Map | v1.2 | Active | Physical truth. Updated April 5: Chatterbox added, llama.cpp.backup removed, 5 archive subfolders registered, H:\ completed, Science Sheet v3, duplication corrected. |
+| D-08 | MCP Access Protocol | v1.0 | Active | Three doors, tier security, cache fix. |
+| D-09 | Quote Engine Playbook | v1.0 | Active | AI quote pipeline — 5 steps, flex-gap architecture, 4 product lines. |
+| D-Master | Strategic Command Ledger | v1.0 | Active | This document. Third Authority. Updated April 5 post-audit remediation. |
 
 ---
 
 ## Access Architecture Summary
-
 | Door | Method | Access Level | Who Uses It |
 |------|--------|-------------|-------------|
 | Door 1 | MCP Filesystem | Read/Write | Cowork projects (Director, Neurologist, Surgeon, Codex, Assistant), Dispatch via proxy |
@@ -112,22 +103,19 @@ Before any structural change, verify all three agree:
 | Door 3 | Flask Jigsaw | Read Only (filtered) | Local models (Qwen, Gemma, GLM, DeepSeek) |
 
 **Protected on Tunnel (403):** /knowledge/people/, /knowledge/APE/clients/, /memory/, /training_data/, /Chat History/
-
 **Protected on MCP:** /knowledge/people/ excluded from config
-
 **Domain:** wiggyoffgrid.com (registered April 4, 2026, expires April 4, 2036)
 **URL:** https://brain.wiggyoffgrid.com
 
 ---
 
 ## Worker Deployment
-
 | Worker | Type | Connection | Role | Status |
 |--------|------|-----------|------|--------|
 | Director (Claude Web) | Opus | Tunnel (web_fetch) | Architecture, planning, strategy | Active |
 | Jarvis Assistant (Cowork) | Opus | MCP | Phone-first assistant, quotes, lookups | Active |
-| Neurologist (Cowork) | Sonnet | MCP | Audits, diagnoses, integrity checks | Setup pending |
-| Surgeon (Cowork) | Sonnet | MCP | Executes fixes with Wiggy approval | Setup pending |
+| Neurologist (Cowork) | Sonnet | MCP | Audits, diagnoses, integrity checks | Active — April 5, 2026 |
+| Surgeon (Cowork) | Sonnet | MCP | Executes fixes with Wiggy approval | Active — April 5, 2026 |
 | Codex (Cowork) | Opus/Sonnet | MCP | Provisioner's Codex rebuild | Active |
 | Dispatch (iPhone) | — | Through Cowork proxy | Wiggy's mobile voice | Active |
 | Claude Code | Opus | Direct filesystem | Surgical strikes only — EXPENSIVE | Available |
@@ -142,20 +130,17 @@ Before any structural change, verify all three agree:
 ---
 
 ## Known Drift (Needs Resolution)
+No active drift items as of April 5, 2026. All items from the April 4 drift table were resolved by the Surgeon during post-Neurologist audit remediation:
 
-These are known inconsistencies between the Three Authorities as of April 4, 2026:
+| Former Issue | Resolution |
+|-------------|-----------|
+| D-08 doctrine not in D-07/D-02 | Resolved — D-07 v1.1 + D-02 v1.3 |
+| D-Master Build not in D-07/D-02 | Resolved — both documents updated |
+| D-21 location "TBD" in D-00 | Resolved — D-00 shows Active location |
+| Brain server scripts not in D-07/D-02 | Resolved — D-07 v1.1 scripts\ section updated |
+| JARVIS_BRAIN_STARTUP.ps1 not in D-07/D-02 | Resolved — D-07 v1.1 lists it |
 
-| Issue | D-07 Says | D-02 Says | D-Master Says | Fix |
-|-------|-----------|-----------|---------------|-----|
-| D-08 doctrine | Not listed | "Reserved" | Active v1.0 | Update D-07 and D-02 |
-| D-Master Build | Not listed | Not listed | Active v1.0 (this document) | Update D-07 and D-02 |
-| D-21 location in D-00 | Active on disk | Active | Active, 1,336 files | Update D-00 location from "TBD" |
-| Brain server scripts | Not in D-07 | Not in D-02 | Active (D-41) | Update D-07 and D-02 |
-| JARVIS_BRAIN_STARTUP.ps1 | Not in D-07 | Not in D-02 | Active (D-44) | Update D-07 and D-02 |
-| Neurologist instructions | On disk | Not in D-02 | Pending setup | Register in D-02 when project created |
-| Surgeon instructions | On disk | Not in D-02 | Pending setup | Register in D-02 when project created |
-
-**Action:** Neurologist's next audit should verify all drift items are resolved. Surgeon executes the fixes.
+New drift items identified in NEUROLOGIST_AUDIT_20260405.md were remediated by Surgeon on April 5, 2026 (see SURGEON_POSTOP_20260405.md). Neurologist to run post-remediation audit to confirm clean state.
 
 ---
 
@@ -165,7 +150,6 @@ These are known inconsistencies between the Three Authorities as of April 4, 202
 - **DRIVE CONSOLIDATION Phase 1:** Neurologist inventory scan of all drives (C, D, E, F, G, H) — document sizes, duplicates, scattered Jarvis files
 - **DRIVE CONSOLIDATION Phase 2:** Plan target structure on D:\ — APE Work, Codex, worker stables all consolidated
 - **C:\ CLEANUP:** Claude Desktop dropped ~10GB in %APPDATA%\Claude\ (vm_bundles). Symlink to D:\ or periodic cleanup.
-- Setup Neurologist and Surgeon as Cowork Sonnet projects
 - Neurologist post-remediation audit
 - Test Grossmann access via tunnel
 
@@ -192,7 +176,6 @@ These are known inconsistencies between the Three Authorities as of April 4, 202
 ---
 
 ## Integrity Rules
-
 1. This document is ONE of the Three Authorities (with D-02 and D-07)
 2. Every domain must appear in this ledger with current status
 3. Every structural change requires updates to ALL three authorities

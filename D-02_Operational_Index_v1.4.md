@@ -1,31 +1,28 @@
-﻿# D-02 — Jarvis Brain Operational Index
-
-**Version:** 1.3
+---
+# D-02 — Jarvis Brain Operational Index
+**Version:** 1.4
 **Status:** Active — Living Document
 **Created:** April 3, 2026
-**Updated:** April 5, 2026 (filename + header aligned to content — v1.3 per Changes Log)
+**Updated:** April 5, 2026 (v1.4 — post-Neurologist audit remediation: version table corrected, D-45 count updated to 13, D-41 Chatterbox added, D-43 new files registered)
 **Authority:** Wiggy (Eric Legault)
-
 ---
 
 ## Purpose
-
 The Operational Index is the single registry of every active doctrine, domain, file, and structural component in the Jarvis Brain. If it is not in this index, it does not officially exist. This is the navigational spine that maps everything to its domain.
 
 ---
 
 ## D-Series Governance Doctrines
-
 | ID | Name | Version | Status |
 |----|------|---------|--------|
 | D-00 | Domain Structure | v1.0 | Active |
 | D-01 | Governance Charter | v1.0 | Active |
-| D-02 | Operational Index | v1.1 | Active |
+| D-02 | Operational Index | v1.4 | Active |
 | D-03 | Numbering Constitution | v1.0 | Active |
-| D-04 | Navigation Spine | v1.0 | Active |
+| D-04 | Navigation Spine | v1.1 | Active |
 | D-05 | File Architecture | v1.0 | Active |
 | D-06 | Revision Control | v1.0 | Active |
-| D-07 | Folder Map | v1.0 | Active |
+| D-07 | Folder Map | v1.1 | Active |
 | D-08 | MCP Access Protocol | v1.0 | Active |
 | D-09 | Quote Engine Playbook | v1.0 | Active |
 | D-MB | D-Master Build — Strategic Command Ledger | v1.0 | Active |
@@ -33,7 +30,6 @@ The Operational Index is the single registry of every active doctrine, domain, f
 ---
 
 ## Tier 1 — Wiggy Only
-
 | ID | Domain | Files | Status |
 |----|--------|-------|--------|
 | D-10 | People & Family | 76 XML cards, 15+ subfolders (includes split inlaws: parent_inlaws, sibling_inlaws, nephew_inlaws, future_inlaws) | Active |
@@ -42,7 +38,6 @@ The Operational Index is the single registry of every active doctrine, domain, f
 ---
 
 ## Tier 2 — Wiggy Authority, AI Assists
-
 | ID | Domain | Files | Status |
 |----|--------|-------|--------|
 | D-12 | Clients & CRM | 309 XML cards, 113 company folders | Active |
@@ -55,7 +50,6 @@ The Operational Index is the single registry of every active doctrine, domain, f
 ---
 
 ## Tier 3 — AI Operational
-
 | ID | Domain | Files | Status |
 |----|--------|-------|--------|
 | D-20 | APE Equipment | 20 chunked XMLs | Active |
@@ -75,33 +69,35 @@ The Operational Index is the single registry of every active doctrine, domain, f
 ---
 
 ## Tier 4 — System
-
 | ID | Domain | Files | Status |
 |----|--------|-------|--------|
 | D-40 | Models & Inference | 6 model files, LoRA v13, training data | Active |
-| D-41 | Infrastructure & Config | Flask, llama-server b8639, Docker, Dashboard, acks, voices, searxng, scripts | Active |
+| D-41 | Infrastructure & Config | Flask, llama-server b8639, Docker, Dashboard, acks, voices, searxng, scripts, Chatterbox-TTS-Server | Active |
 | D-42 | Knowledge & Extraction | 8 category folders + Claude sessions report, chat history | Active |
-| D-43 | Governance & Planning | D-Series Compass, Ideas Vault, Handoff docs | Active |
+| D-43 | Governance & Planning | D-Series Compass, Ideas Vault, Handoff docs, NEUROLOGIST_PROJECT_INSTRUCTIONS.md, SURGEON_PROJECT_INSTRUCTIONS.md, GROSSMANN_AISTUDIO_SETUP.md, MASTER_SCIENCE_SHEET_v3.md | Active |
 | D-44 | Automation & Workers | Mason (Docker Claude), Koonie stable (Claude Code), Gordon stable, scripts | Active |
-| D-45 | Archives & Retired | 8 archive subfolders with manifest — legacy, modelfiles, extraction tests, old knowledge, reference, legacy UI, root scripts | Active |
+| D-45 | Archives & Retired | 13 archive subfolders with manifest — legacy, modelfiles, extraction_tests, knowledge_old, knowledge_old_2, reference, legacy_ui, root_scripts, project_setup_docs, extraction_analysis, science_sheet_lineage, drive_audit_march26, openwebui_memory | Active |
 
 ---
 
-## Changes Log — v1.3 (April 4, 2026)
+## Changes Log — v1.4 (April 5, 2026)
+- Version table corrected: D-02 self-row v1.1→v1.4, D-04 v1.0→v1.1, D-07 v1.0→v1.1
+- D-45 archive count updated: 8→13 subfolders (added project_setup_docs, extraction_analysis, science_sheet_lineage, drive_audit_march26, openwebui_memory)
+- D-41: removed llama.cpp.backup\ (deleted April 5), added Chatterbox-TTS-Server\
+- D-43: registered NEUROLOGIST_PROJECT_INSTRUCTIONS.md, SURGEON_PROJECT_INSTRUCTIONS.md, GROSSMANN_AISTUDIO_SETUP.md, MASTER_SCIENCE_SHEET_v3.md
 
+## Changes Log — v1.3 (April 4, 2026)
 - D-09 activated: Quote Engine Playbook v1.0 (AI quote generation pipeline — vibro, impact, drill, wick drain)
 - Files at: knowledge/APE/quoting/ (4 rules XMLs, pricing JSON, generator JS, watermark PY, README)
 - Cross-reference updated to include D-09
 
 ## Changes Log — v1.2 (April 4, 2026)
-
 - D-08 activated: MCP Access Protocol v1.0 (three-door access model, tier-based security, tunnel/MCP/Flask)
 - D-Master Build added: Strategic Command Ledger v1.0 (Third Authority — tracks all 26 domains with strategic status)
 - D-41 note: Brain server (jarvis_brain_server.py), Cloudflare tunnel (config.yml), startup script (JARVIS_BRAIN_STARTUP.ps1) now live
 - Cross-reference updated to include D-Master Build
 
 ## Changes Log — v1.1
-
 - Added D-07 Folder Map (v1.0)
 - Added D-45 Archives & Retired domain
 - D-12 updated: 309 cards (was 316), 113 folders (was 121)
@@ -118,7 +114,6 @@ The Operational Index is the single registry of every active doctrine, domain, f
 ---
 
 ## Index Rules
-
 1. Every active file must appear in this index under its domain
 2. This index is updated every time a new file is created or retired
 3. File counts are verified periodically against actual disk contents
@@ -128,7 +123,6 @@ The Operational Index is the single registry of every active doctrine, domain, f
 ---
 
 ## Cross-Reference
-
 This index maps to:
 - D-00 Domain Structure (domain definitions and tiers)
 - D-07 Folder Map (physical disk locations)

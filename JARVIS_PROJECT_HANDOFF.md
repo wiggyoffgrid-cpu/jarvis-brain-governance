@@ -1,13 +1,11 @@
+---
 # PROJECT JARVIS — SESSION HANDOFF
-
-**Updated:** April 5, 2026 (GitHub publishing mirror documented; D-02 filename aligned to v1.3; D-07 bumped to v1.1; D-04 bumped to v1.1; Google Search Console + sitemap registered)
+**Updated:** April 5, 2026 (post-Neurologist audit remediation — llama.cpp.backup removed, Chatterbox-TTS-Server added, archive 13 subfolders, Science Sheet v3, D-43 governance paths corrected, D-02 bumped to v1.4, D-07 bumped to v1.2)
 **Previous session:** April 4, 2026 (evening — infrastructure buildout + quote engine start)
 **Authority:** Wiggy (Eric Legault)
-
 ---
 
 ## WHAT THIS PROJECT IS
-
 Jarvis is a fully private local AI assistant running on WIGGYS-BEAST. No cloud dependency. No API keys for inference. Everything runs local — even off-grid at the cabin in northern Ontario on Starlink.
 
 The system uses three layers: system prompt (facts), LoRA v13 (personality), and Jigsaw XML injection (relationships/data). Flask on port 5001 assembles the context, llama-server on port 8080 runs inference, Chatterbox TTS on port 8004 provides voice output.
@@ -15,23 +13,22 @@ The system uses three layers: system prompt (facts), LoRA v13 (personality), and
 ---
 
 ## GOVERNANCE — D-SERIES COMPASS
-
 The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines are active:
 
 | Doc | Name | Version | Purpose |
 |-----|------|---------|---------|
 | D-00 | Domain Structure | v1.0 | Master map of all 26 domains across 4 authority tiers |
 | D-01 | Governance Charter | v1.0 | Authority model, standing orders, Three Authorities rule |
-| D-02 | Operational Index | v1.3 | Registry of every active file, card, and component (filename + header aligned to v1.3 April 5) |
+| D-02 | Operational Index | v1.4 | Registry of every active file, card, and component (updated April 5 — version table, D-45 count 8→13, D-41 Chatterbox, D-43 new files) |
 | D-03 | Numbering Constitution | v1.0 | Permanent numbering rules, reserved ranges |
 | D-04 | Navigation Spine | v1.1 | How everything cross-references and connects (extended April 5 to cover D-07, D-08, D-09, D-Master Build) |
 | D-05 | File Architecture | v1.0 | Naming rules, folder structure, card templates |
 | D-06 | Revision Control | v1.0 | Versioning, lock sequence, backup rules |
-| D-07 | Folder Map | v1.1 | Physical truth of what exists on disk (extended April 5 — GitHub repo, APE subfolders, brain-root web files, governance ancillaries) |
+| D-07 | Folder Map | v1.2 | Physical truth of what exists on disk (updated April 5 — Chatterbox added, llama.cpp.backup removed, 5 archive subfolders, H:\ completed, Science Sheet v3, duplication corrected) |
 | D-08 | MCP Access Protocol | v1.0 | How AIs connect to the Jarvis Brain — MCP, tunnel, tiers — NEW April 4 |
 | D-09 | Quote Engine Playbook | v1.0 | AI Quote Engine — voice-to-PDF quote generation — NEW April 4 |
 
-**D-Master Build** (Strategic Command Ledger v1.0) — the third Authority — created April 4. Tracks all 26 domains with strategic status, worker deployment, access architecture, and roadmap.
+**D-Master Build** (Strategic Command Ledger v1.0) — the third Authority — created April 4. Tracks all 26 domains with strategic status, worker deployment, access architecture, and roadmap. Updated April 5: version tables corrected, drift table cleared, Neurologist and Surgeon marked Active.
 
 **The Three Authorities Rule:** No structural change is valid unless reflected in all three: D-07 Folder Map (physical truth), D-02 Operational Index (registry), and D-Master Build (strategic ledger). If any one doesn't match, the change is invalid.
 
@@ -42,7 +39,6 @@ The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines 
 ## MULTI-PROJECT SYSTEM — NEW THIS SESSION
 
 ### Project Roster
-
 | Project | Role | Model | Purpose |
 |---------|------|-------|---------|
 | **Project Jarvis** | Director | Opus 4.6 | Architecture, planning, strategy, D-series governance |
@@ -52,7 +48,6 @@ The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines 
 | **Project Jarvis Assistant** | Assistant | Opus 4.6 | Phone-first personal assistant — quotes, lookups, lists. NEW April 4 |
 
 ### Communication System — MCP + Mail Cart + Cloudflare Tunnel
-
 **MCP Filesystem Server (NEW April 4):**
 - All Cowork projects connect directly to D:\Jarvis\brain\ via MCP filesystem server
 - Config at: %APPDATA%\Claude\claude_desktop_config.json
@@ -71,7 +66,7 @@ The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines 
 - **GitHub Publishing Mirror:** `D:\Jarvis\jarvis-brain-governance\` is a git-backed one-way publishing mirror of `D:\Jarvis\brain\governance\D-Series\`. Canonical is disk; repo is downstream. Never edit repo directly. Username: **wiggyoffgrid-cpu**.
 - **Google Search Console:** brain.wiggyoffgrid.com is verified via `D:\Jarvis\brain\google1686c194464aad5a.html` (permanent — do not delete).
 - **Sitemap:** `D:\Jarvis\brain\sitemap.xml` — published for Google indexing of brain.wiggyoffgrid.com (permanent).
-- **Grossmann Access:** Live tunnel access via brain.wiggyoffgrid.com failed due to a Google AI platform limitation on outbound fetches. Grossmann's working door is the PDF briefing packet at `D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.pdf` — delivered by Wiggy per request. Markdown source at `GROSSMANN_BRIEFING_PACKET.md`.
+- **Grossmann Access:** Live tunnel access via brain.wiggyoffgrid.com failed due to a Google AI platform limitation on outbound fetches. Grossmann's working door is the PDF briefing packet at `D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.pdf` — delivered by Wiggy per request. Markdown source at `GROSSMANN_BRIEFING_PACKET.md`. Setup instructions at `GROSSMANN_AISTUDIO_SETUP.md`.
 
 **Mail Cart (still active):**
 - Location: D:\Jarvis\brain\mail_cart\
@@ -92,14 +87,13 @@ The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines 
 10. Neurologist runs post-remediation audit
 
 ### Key Documents in Project Bins
-
-**Neurologist:** D-02 v1.1, D-05 v1.0, D-07 v1.0, Inter-Project Task Template, Output Hygiene Rules
-**Surgeon:** Science Sheet v2, New Discovery Form, Inter-Project Task Template, Output Hygiene Rules
+**Neurologist:** D-02 v1.4, D-05 v1.0, D-07 v1.2, Inter-Project Task Template, Output Hygiene Rules
+**Surgeon:** Science Sheet v3, New Discovery Form, Inter-Project Task Template, Output Hygiene Rules
 **All projects:** SERVICE_BULLETIN_MAIL_CART.md
 
 ### Audit Log System
 **Location:** D:\Jarvis\brain\governance\audit_logs\
-**Contents:** OUTPUT_HYGIENE_RULES.md, SURGEON_POSTOP_20260403_01.md, SURGEON_POSTOP_20260403_02.md
+**Contents:** OUTPUT_HYGIENE_RULES.md, SURGEON_POSTOP_20260403_01.md, SURGEON_POSTOP_20260403_02.md, NEUROLOGIST_AUDIT_20260405.md, SURGICAL_ORDERS_20260405.md, SURGEON_POSTOP_20260405.md
 **Rule:** All reports saved as downloadable files, deployed to audit_logs, Downloads cleaned after delivery.
 
 ---
@@ -147,7 +141,7 @@ Inlaws folder split into 4 subfolders:
 ### Infrastructure
 - Flask: D:\Jarvis\jarvis_flask.py (port 5001) — v24.3
 - llama-server: D:\Jarvis\llama.cpp\llama-server.exe (port 8080) — build b8639
-- Chatterbox TTS: Docker container (port 8004) — Adrian voice — CURRENTLY BROKEN
+- Chatterbox TTS: D:\Jarvis\Chatterbox-TTS-Server\ (port 8004) — Adrian voice — CURRENTLY BROKEN
 - Jarvis Brain Server: D:\Jarvis\scripts\jarvis_brain_server.py (port 8009) — read-only HTTP, Tier 1 protected — NEW April 4
 - Cloudflare Tunnel: D:\Jarvis\scripts\cloudflared.exe — named tunnel "jarvis-brain" — NEW April 4
 - Tunnel config: D:\Jarvis\scripts\config.yml — permanent tunnel config
@@ -164,29 +158,28 @@ Inlaws folder split into 4 subfolders:
 
 ### D:\Jarvis\ Root (CLEAN)
 13 folders, 3 files. No debris. No orphans.
-- Folders: acks, brain, Dashboard, jarvis-brain-governance, llama.cpp, llama.cpp.backup, logs, Mason, qlora, scripts, searxng, uploads, voices
+- Folders: acks, brain, Chatterbox-TTS-Server, Dashboard, jarvis-brain-governance, llama.cpp, logs, Mason, qlora, scripts, searxng, uploads, voices
 - Files: jarvis_flask.py, system_prompt_v13.txt, DockerBootSequence.ps1
 - Note: `jarvis-brain-governance\` is the GitHub publishing mirror — canonical D-Series lives in `brain\governance\D-Series\`. Disk → repo only.
 
 ### D:\Jarvis\brain\ (CLEAN)
-Zero loose files in root. Subfolders only:
-- governance\ (D-Series\, audit_logs\, + 3 operational docs)
+Two permanent root files (Google Search Console + sitemap). Subfolders:
+- governance\ (D-Series\, audit_logs\, + ancillary governance docs)
 - knowledge\ (people\, APE\, extracted\, wiggy_equipment\, wiggy_personal\)
 - Chat History\
 - Ideas Vault\
 - memory\
 - training_data\
-- archive\ (D-45 — 9 subfolders with manifest)
+- archive\ (D-45 — 13 subfolders with manifest)
 - mail_cart\ (inter-project relay — NEW)
 
 ### Governance Folder
 - D-Series\: D-00 through D-09, D-Master Build, CLAUDE_READ_THIS_FIRST.md, JARVIS_PROJECT_HANDOFF.md, NEUROLOGIST_PROJECT_INSTRUCTIONS.md, SURGEON_PROJECT_INSTRUCTIONS.md
-- audit_logs\: Output Hygiene Rules + 2 Surgeon post-op reports
-- COMMAND_LIBRARY.md, MASTER_SCIENCE_SHEET_v2.md, STRATEGIC_PLANNING_v1.0.md
+- audit_logs\: Output Hygiene Rules + Surgeon post-op reports + Neurologist audit + Surgical Orders
+- COMMAND_LIBRARY.md, MASTER_SCIENCE_SHEET_v3.md, STRATEGIC_PLANNING_v1.0.md, GROSSMANN_AISTUDIO_SETUP.md
 
 ### Archive (D-45)
-9 subfolders with _MANIFEST.md:
-legacy\, modelfiles\, extraction_tests\, knowledge_old\, knowledge_old_2\, reference\, legacy_ui\, root_scripts\, project_setup_docs\, extraction_analysis\
+13 subfolders with _MANIFEST.md: legacy\, modelfiles\, extraction_tests\, knowledge_old\, knowledge_old_2\, reference\, legacy_ui\, root_scripts\, project_setup_docs\, extraction_analysis\, science_sheet_lineage\, drive_audit_march26\, openwebui_memory\
 
 ### Other Locations
 - Downloads: EMPTY
@@ -197,7 +190,6 @@ legacy\, modelfiles\, extraction_tests\, knowledge_old\, knowledge_old_2\, refer
 ---
 
 ## WORKER ROSTER
-
 | Worker | Identity | Role | Connection | Status |
 |--------|----------|------|------------|--------|
 | **Claude Web** (Opus) | claude.ai | Director — architecture, planning, auditing | web_fetch via brain.wiggyoffgrid.com | Active |
@@ -217,7 +209,6 @@ legacy\, modelfiles\, extraction_tests\, knowledge_old\, knowledge_old_2\, refer
 ---
 
 ## DOCKER STATUS
-
 - Docker Desktop v4.67.0 on Business account (wiggonator)
 - Gordon backend flag flipped by Docker Support April 3, 2026 (Case #00202864 — RESOLVED)
 - EnableDockerAI in settings-store.json may need manual flip to true after re-login
@@ -227,7 +218,6 @@ legacy\, modelfiles\, extraction_tests\, knowledge_old\, knowledge_old_2\, refer
 ---
 
 ## IDEAS VAULT — UPDATED THIS SESSION
-
 **Location:** D:\Jarvis\brain\Ideas Vault\JARVIS_IDEAS_VAULT.md (43KB+)
 
 New ideas logged this session:
@@ -240,10 +230,9 @@ New ideas logged this session:
 ---
 
 ## LIBRARIAN ARCHITECTURE — PROVEN
-
 Gemma tested with filtered card loading — PERFECT results:
 - 13/13 direct nieces/nephews
-- 8/8 great-nieces/nephews  
+- 8/8 great-nieces/nephews
 - 5/5 nephew-in-laws (no Bob Barnes, Janet, Julie contamination)
 
 **Architecture:** D-series domains → Flask reads question → routes to correct domain → loads only relevant cards → model gets focused context → accuracy peaks
@@ -253,7 +242,6 @@ Folder structure IS the filter. The inlaws split eliminated over-inclusion. The 
 ---
 
 ## NEUROLOGIST FIRST AUDIT — COMPLETED
-
 First full audit ran this session. Results:
 - 3 Critical findings (all resolved by Surgeon)
 - 7 Warnings (all resolved)
@@ -272,8 +260,8 @@ First full audit ran this session. Results:
 
 ### Immediate (Next Session) — PRIORITY ORDER
 - [ ] **DRIVE CONSOLIDATION — Phase 1: Inventory** (see plan below)
-- [ ] Neurologist post-remediation audit (verify Three Authorities aligned — carried from April 3)
-- [ ] Re-setup Neurologist and Surgeon as Sonnet projects in Cowork (instructions ready in governance/)
+- [ ] Neurologist post-remediation audit (verify Three Authorities aligned post April 5 surgery)
+- [x] Neurologist and Surgeon active as Sonnet projects in Cowork — DONE April 5
 - [ ] Test Grossmann access via brain.wiggyoffgrid.com
 - [ ] Find Adrian voice files for voices\ folder (likely in Docker container)
 
@@ -303,7 +291,6 @@ First full audit ran this session. Results:
 - [ ] Find Wiggy's original dictated equipment rules file (somewhere on the Beast)
 
 ### DRIVE CONSOLIDATION — THE BIG CLEANUP
-
 **Problem:** Jarvis files scattered across C:\, D:\, E:\, F:\, G:\, H:\. Duplicates everywhere. C:\ gained ~10GB from Claude Desktop install (vm_bundles in %APPDATA%\Claude\). Wiggy wants D:\ as THE drive — one source of truth for everything.
 
 **What's where right now:**
@@ -336,7 +323,7 @@ First full audit ran this session. Results:
 - [ ] Investigate Qwen3-8B F16 (30.53GB) — still needed for LoRA or delete?
 - [ ] Fix Chatterbox TTS (currently broken)
 - [ ] Cold boot verification — all services auto-start (including brain server + tunnel)
-- [ ] Science Sheet v2 NEEDS_VERIFICATION items (14 items flagged)
+- [ ] Science Sheet v3 NEEDS_VERIFICATION items (carry forward from v2)
 
 ### On the Horizon
 - [ ] Flask v25 UI with hat-swap buttons
@@ -352,7 +339,6 @@ First full audit ran this session. Results:
 ---
 
 ## KEY LEARNINGS — APRIL 4, 2026
-
 - **MCP is simpler than expected:** One npm package, one config file edit, instant filesystem access to the entire brain
 - **BOM encoding breaks JSON:** Always use UTF8Encoding($false) for config files — no BOM
 - **Cowork projects are desktop-only:** No mobile Cowork yet, Dispatch is the workaround
@@ -371,7 +357,6 @@ First full audit ran this session. Results:
 ---
 
 ## KEY LEARNINGS — APRIL 3, 2026
-
 - **Multi-project architecture works:** Neurologist diagnoses, Surgeon operates, mail cart delivers. Proven in one session.
 - **Mail Cart is simple but powerful:** TO_[DESTINATION] naming, one flat folder, Wiggy delivers. 30 seconds vs 10 minutes of copy-paste.
 - **The Surgeon follows protocol:** Asked for Wiggy approval before every cut. Flagged governance updates back to Jarvis. Produced post-op reports as files. Caught his own stale files.
@@ -385,7 +370,6 @@ First full audit ran this session. Results:
 ---
 
 ## FILE PATHS QUICK REFERENCE
-
 | Item | Path |
 |------|------|
 | D-Series governance (canonical) | D:\Jarvis\brain\governance\D-Series\ |
@@ -394,6 +378,7 @@ First full audit ran this session. Results:
 | Google Search Console verify | D:\Jarvis\brain\google1686c194464aad5a.html |
 | Grossmann briefing (PDF) | D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.pdf |
 | Grossmann briefing (MD source) | D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.md |
+| Grossmann AI Studio setup | D:\Jarvis\brain\governance\GROSSMANN_AISTUDIO_SETUP.md |
 | Drive consolidation plan | D:\Jarvis\brain\governance\DRIVE_CONSOLIDATION_PLAN_v1.0.md |
 | Audit logs | D:\Jarvis\brain\governance\audit_logs\ |
 | Mail cart | D:\Jarvis\brain\mail_cart\ |
@@ -411,7 +396,7 @@ First full audit ran this session. Results:
 | Koonie stable | H:\Koonie\ |
 | Gordon stable | H:\Gordons Stable\ |
 | Docker fix script | D:\Jarvis\scripts\fix_docker.ps1 |
-| Science Sheet v2 | D:\Jarvis\brain\governance\MASTER_SCIENCE_SHEET_v2.md |
+| Science Sheet v3 | D:\Jarvis\brain\governance\MASTER_SCIENCE_SHEET_v3.md |
 | Command Library | D:\Jarvis\brain\governance\COMMAND_LIBRARY.md |
 | Strategic Planning | D:\Jarvis\brain\governance\STRATEGIC_PLANNING_v1.0.md |
 | Codex project | E:\THE PROVISIONERS CODEX\ |

@@ -1,16 +1,14 @@
-﻿# D-07 — Jarvis Brain Folder Map
-
-**Version:** 1.1
+---
+# D-07 — Jarvis Brain Folder Map
+**Version:** 1.2
 **Status:** Active — Living Document
 **Created:** April 3, 2026
-**Updated:** April 5, 2026 (added jarvis-brain-governance repo, APE subfolders, brain-root web files, governance ancillary docs)
+**Updated:** April 5, 2026 — Added Chatterbox-TTS-Server, removed llama.cpp.backup (deleted), 5 unregistered archive subfolders registered, H:\ section completed with Docker + 3 PST files, Neurologist/Surgeon instruction duplication corrected, Science Sheet v3 registered, GROSSMANN_AISTUDIO_SETUP.md registered
 **Authority:** Wiggy (Eric Legault)
 **Last Audited:** April 5, 2026
-
 ---
 
 ## Purpose
-
 The Folder Map is the physical truth of what exists on disk. It is one of the Three Authorities — no structural change is valid unless this map, D-02 Operational Index, and D-Master Build all agree.
 
 If a folder exists on disk but not in this map, it is unregistered. If a folder appears in this map but not on disk, it is missing. Both conditions are invalid.
@@ -20,7 +18,6 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 ## D:\ Drive — Jarvis Brain (Primary Workspace)
 
 ### D:\Jarvis\ (Root)
-
 | Folder/File | Domain | Purpose | Status |
 |---|---|---|---|
 | jarvis-brain-governance\ | D-44 | GitHub publishing mirror of D-Series\ (canonical = brain\governance\D-Series\). One-way sync: disk → repo. Username: wiggyoffgrid-cpu | Active |
@@ -28,9 +25,9 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | system_prompt_v13.txt | D-41 | System prompt (facts layer) | Active |
 | DockerBootSequence.ps1 | D-41 | 19-second auto-start sequence | Active |
 | acks\ | D-41 | TTS acknowledgment WAV files (ack_0 through ack_5) | Active |
+| Chatterbox-TTS-Server\ | D-41 | Chatterbox TTS server — Adrian voice (currently broken, port 8004) | Active |
 | Dashboard\ | D-41 | Mission Control HTML dashboards (v3, v4, Operators Manual) | Active |
 | llama.cpp\ | D-41 | llama-server b8639 (current build) | Active |
-| llama.cpp.backup\ | D-41 | llama-server backup (pre-b8639) | Active |
 | logs\ | D-41 | Boot sequence and system logs | Active |
 | Mason\ | D-44 | Docker Claude (Anthropic) worker — scripts, playbooks, task system | Active |
 | scripts\ | D-44 | Operational scripts (fix_docker.ps1, time_check.ps1, jarvis_brain_server.py, JARVIS_BRAIN_STARTUP.ps1, config.yml, cloudflared.exe) | Active |
@@ -40,7 +37,6 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | qlora\ | D-40 | QLoRA training — datasets, models, output, scripts, venv | Active |
 
 ### D:\Jarvis\brain\
-
 | Folder/File | Domain | Purpose | Status |
 |---|---|---|---|
 | governance\ | D-43 | D-Series Compass (D-00 through D-09, D-Master Build), worker project instructions, briefing packets, consolidation plan | Active |
@@ -56,20 +52,19 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | sitemap.xml | D-41 | Google sitemap for brain.wiggyoffgrid.com (permanent) | Active |
 
 ### D:\Jarvis\brain\governance\ (ancillary documents — not D-Series\)
-
 | File | Domain | Purpose | Status |
 |---|---|---|---|
 | COMMAND_LIBRARY.md | D-43 | Operational command reference | Active |
-| MASTER_SCIENCE_SHEET_v2.md | D-43 | Jarvis science sheet (consumed v1, consolidated April 3) | Active |
+| MASTER_SCIENCE_SHEET_v3.md | D-43 | Jarvis science sheet v3 (current active — v2 archived April 5) | Active |
 | STRATEGIC_PLANNING_v1.0.md | D-43 | Strategic planning doc (D-05 naming compliant) | Active |
 | DRIVE_CONSOLIDATION_PLAN_v1.0.md | D-43 | Drive consolidation master plan (C/D/E/F/G/H) | Active |
 | GROSSMANN_BRIEFING_PACKET.md | D-43 | Grossmann AI architect briefing (markdown source) | Active |
 | GROSSMANN_BRIEFING_PACKET.pdf | D-43 | Grossmann briefing PDF — his door (live tunnel access blocked by Google AI platform) | Active |
+| GROSSMANN_AISTUDIO_SETUP.md | D-43 | Grossmann AI Studio setup and access instructions | Active |
 | NEUROLOGIST_PROJECT_INSTRUCTIONS.md | D-43 | Neurologist project setup instructions | Active |
 | SURGEON_PROJECT_INSTRUCTIONS.md | D-43 | Surgeon project setup instructions | Active |
 
 ### D:\Jarvis\brain\knowledge\
-
 | Folder | Domain | Purpose | Status |
 |---|---|---|---|
 | people\ | D-10 | 76 XML people cards across 15 subfolders | Active |
@@ -79,7 +74,6 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | wiggy_personal\ | D-10 | Cabin build, world vision, family brain docs | Active |
 
 ### D:\Jarvis\brain\knowledge\people\
-
 | Folder | Card Count | Notes |
 |---|---|---|
 | wiggy\ | 1 | eric_legault.xml |
@@ -102,7 +96,6 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | pets\ | 1 | kaiya.xml |
 
 ### D:\Jarvis\brain\knowledge\APE\
-
 | Folder | Contents | Domain |
 |---|---|---|
 | clients\ | 113 company folders, 309 XML client cards | D-12 |
@@ -118,7 +111,6 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | archive\ | APE archive subfolder | D-45 |
 
 ### D:\Jarvis\brain\knowledge\extracted\
-
 | Folder | Domain | Purpose |
 |---|---|---|
 | commands_that_worked\ | D-42 | Verified working commands |
@@ -131,8 +123,7 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | codex_and_book\ | D-42 | Codex-related extractions |
 | Claude sessions extraction report\ | D-42 | Extraction reports |
 
-### D:\Jarvis\brain\archive\ (D-45)
-
+### D:\Jarvis\brain\archive\ (D-45 — 13 subfolders with manifest)
 | Folder | Contents | Source |
 |---|---|---|
 | legacy\ | Old docmatrix, ollama configs, master manual | D:\Jarvis\Legacy\ |
@@ -143,21 +134,28 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | reference\ | Onboarding questionnaires, knowledge registry (FLAGGED for product) | brain\knowledge\_reference\ |
 | legacy_ui\ | Old Flask UI (app.py, app_rag.py, templates) | D:\Jarvis\jarvis-ui\ |
 | root_scripts\ | Batch extraction scripts, reports, training logs | D:\Jarvis\ root files |
+| project_setup_docs\ | Former project bin contents moved to governance archive | D:\Project Bin Files\ |
+| extraction_analysis\ | Extraction analysis reports | brain\knowledge\extracted\ |
+| science_sheet_lineage\ | Science sheet version lineage — v1 through v2 archived April 5 | brain\governance\ |
+| drive_audit_march26\ | Drive audit data from March 2026 | D:\ drive audit session |
+| openwebui_memory\ | OpenWebUI memory export — archived April 5 | OpenWebUI |
 | _MANIFEST.md | Archive contents manifest | Created April 3, 2026 |
 
 ---
 
 ## H:\ Drive — Backup, Staging, Worker Stables
-
-| Folder | Domain | Purpose | Status |
+| Folder/File | Domain | Purpose | Status |
 |---|---|---|---|
+| H:\Docker\ | D-41 | Docker images and volumes | Active |
 | H:\Koonie\ | D-44 | Claude Code deployment — task launcher, logs, output | Active |
 | H:\Gordons Stable\ | D-44 | Gordon worker stable — scripts, PST files, enrichment tools | Active |
+| H:\EricL@apevibro.com.pst | D-42 | APE email archive PST — EricL account | Active |
+| H:\last 7 years of inbox emails wiggy.pst | D-42 | Personal inbox archive PST — 7 years | Active |
+| H:\Wiggy_APE_Emails.pst | D-42 | APE email archive PST — Wiggy account | Active |
 
 ---
 
 ## D:\Jarvis\qlora\ (D-40 Models & Inference)
-
 | Folder | Purpose |
 |---|---|
 | models\ | Model GGUF files (14B, 9B, Gemma E4B, GLM-Z1-9B, DeepSeek R1, Qwen3-8B F16) |
@@ -170,29 +168,25 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 ---
 
 ## D:\Jarvis\brain\governance\D-Series\
-
 | File | Version | Status |
 |---|---|---|
 | CLAUDE_READ_THIS_FIRST.md | — | Active |
 | D-00_Domain_Structure_v1.0.md | v1.0 | Active |
 | D-01_Governance_Charter_v1.0.md | v1.0 | Active |
-| D-02_Operational_Index_v1.3.md | v1.3 | Active |
+| D-02_Operational_Index_v1.4.md | v1.4 | Active |
 | D-03_Numbering_Constitution_v1.0.md | v1.0 | Active |
 | D-04_Navigation_Spine_v1.1.md | v1.1 | Active |
 | D-05_File_Architecture_v1.0.md | v1.0 | Active |
 | D-06_Revision_Control_v1.0.md | v1.0 | Active |
-| D-07_Folder_Map_v1.1.md | v1.1 | Active |
+| D-07_Folder_Map_v1.2.md | v1.2 | Active |
 | D-08_MCP_Access_Protocol_v1.0.md | v1.0 | Active |
 | D-09_Quote_Engine_v1.0.md | v1.0 | Active |
 | D-Master_Build_v1.0.md | v1.0 | Active |
 | JARVIS_PROJECT_HANDOFF.md | — | Active |
-| NEUROLOGIST_PROJECT_INSTRUCTIONS.md | — | Active |
-| SURGEON_PROJECT_INSTRUCTIONS.md | — | Active |
 
 ---
 
 ## Other Drives
-
 | Path | Domain | Purpose | AI Access |
 |---|---|---|---|
 | C:\ | — | Windows ONLY — SACRED | NEVER |
@@ -205,7 +199,6 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 ---
 
 ## Integrity Rules
-
 1. This map is ONE of the Three Authorities (with D-02 and D-Master Build)
 2. Every folder on disk must appear in this map
 3. Every folder in this map must exist on disk
