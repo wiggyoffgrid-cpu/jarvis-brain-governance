@@ -1,9 +1,9 @@
 ﻿# D-02 — Jarvis Brain Operational Index
 
-**Version:** 1.1
+**Version:** 1.3
 **Status:** Active — Living Document
 **Created:** April 3, 2026
-**Updated:** April 4, 2026 (D-09 activated — Quote Engine Playbook v1.0)
+**Updated:** April 5, 2026 (filename + header aligned to content — v1.3 per Changes Log)
 **Authority:** Wiggy (Eric Legault)
 
 ---

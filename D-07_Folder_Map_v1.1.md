@@ -1,10 +1,11 @@
 ﻿# D-07 — Jarvis Brain Folder Map
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Active — Living Document
 **Created:** April 3, 2026
+**Updated:** April 5, 2026 (added jarvis-brain-governance repo, APE subfolders, brain-root web files, governance ancillary docs)
 **Authority:** Wiggy (Eric Legault)
-**Last Audited:** April 4, 2026
+**Last Audited:** April 5, 2026
 
 ---
 
@@ -22,6 +23,7 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 
 | Folder/File | Domain | Purpose | Status |
 |---|---|---|---|
+| jarvis-brain-governance\ | D-44 | GitHub publishing mirror of D-Series\ (canonical = brain\governance\D-Series\). One-way sync: disk → repo. Username: wiggyoffgrid-cpu | Active |
 | jarvis_flask.py | D-41 | Flask app, port 5001, Jigsaw XML injection | Active |
 | system_prompt_v13.txt | D-41 | System prompt (facts layer) | Active |
 | DockerBootSequence.ps1 | D-41 | 19-second auto-start sequence | Active |
@@ -39,9 +41,9 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 
 ### D:\Jarvis\brain\
 
-| Folder | Domain | Purpose | Status |
+| Folder/File | Domain | Purpose | Status |
 |---|---|---|---|
-| governance\ | D-43 | D-Series Compass (D-00 through D-09, D-Master Build), worker project instructions | Active |
+| governance\ | D-43 | D-Series Compass (D-00 through D-09, D-Master Build), worker project instructions, briefing packets, consolidation plan | Active |
 | governance\audit_logs\ | D-43 | Neurologist audits, Surgeon post-ops, discovery forms, hygiene rules | Active |
 | knowledge\ | Multiple | All knowledge domains | Active |
 | Chat History\ | D-42 | Claude session transcripts, ChatGPT exports | Active |
@@ -49,6 +51,22 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | memory\ | D-41 | Cache, knowledge, uploads, vector_db | Active |
 | training_data\ | D-40 | Training datasets — email, codex, quote JSONL files | Active |
 | archive\ | D-45 | Archived/retired files with manifest | Active |
+| mail_cart\ | D-43 | Inter-project relay — TO_[DESTINATION]_description_YYYYMMDD.md files | Active |
+| google1686c194464aad5a.html | D-41 | Google Search Console verification file (permanent — must stay at brain root for brain.wiggyoffgrid.com) | Active |
+| sitemap.xml | D-41 | Google sitemap for brain.wiggyoffgrid.com (permanent) | Active |
+
+### D:\Jarvis\brain\governance\ (ancillary documents — not D-Series\)
+
+| File | Domain | Purpose | Status |
+|---|---|---|---|
+| COMMAND_LIBRARY.md | D-43 | Operational command reference | Active |
+| MASTER_SCIENCE_SHEET_v2.md | D-43 | Jarvis science sheet (consumed v1, consolidated April 3) | Active |
+| STRATEGIC_PLANNING_v1.0.md | D-43 | Strategic planning doc (D-05 naming compliant) | Active |
+| DRIVE_CONSOLIDATION_PLAN_v1.0.md | D-43 | Drive consolidation master plan (C/D/E/F/G/H) | Active |
+| GROSSMANN_BRIEFING_PACKET.md | D-43 | Grossmann AI architect briefing (markdown source) | Active |
+| GROSSMANN_BRIEFING_PACKET.pdf | D-43 | Grossmann briefing PDF — his door (live tunnel access blocked by Google AI platform) | Active |
+| NEUROLOGIST_PROJECT_INSTRUCTIONS.md | D-43 | Neurologist project setup instructions | Active |
+| SURGEON_PROJECT_INSTRUCTIONS.md | D-43 | Surgeon project setup instructions | Active |
 
 ### D:\Jarvis\brain\knowledge\
 
@@ -88,8 +106,16 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | Folder | Contents | Domain |
 |---|---|---|
 | clients\ | 113 company folders, 309 XML client cards | D-12 |
+| equipment\ | APE equipment subfolder | D-20 |
 | (equipment XMLs) | 20 chunked APE product XMLs | D-20 |
 | quoting\ | Quote engine: 4 rules XMLs, sheet4_pricing.json, generate_quote_v6.js, add_watermark.py, QUOTE_ENGINE_README.md, logos/ | D-09 |
+| quotes\ | Generated quote PDF output (currently 2 PDFs — Joel Day 600 vibro + tandem) | D-09 |
+| canada\ | APE Canada-specific materials | D-12/D-20 |
+| company\ | APE company documents | D-12/D-20 |
+| documentation\ | APE product documentation | D-20 |
+| media\ | APE media assets (images, brochures) | D-23/D-20 |
+| methods\ | APE operational methods and procedures | D-20 |
+| archive\ | APE archive subfolder | D-45 |
 
 ### D:\Jarvis\brain\knowledge\extracted\
 
@@ -150,12 +176,12 @@ If a folder exists on disk but not in this map, it is unregistered. If a folder 
 | CLAUDE_READ_THIS_FIRST.md | — | Active |
 | D-00_Domain_Structure_v1.0.md | v1.0 | Active |
 | D-01_Governance_Charter_v1.0.md | v1.0 | Active |
-| D-02_Operational_Index_v1.2.md | v1.2 | Active |
+| D-02_Operational_Index_v1.3.md | v1.3 | Active |
 | D-03_Numbering_Constitution_v1.0.md | v1.0 | Active |
-| D-04_Navigation_Spine_v1.0.md | v1.0 | Active |
+| D-04_Navigation_Spine_v1.1.md | v1.1 | Active |
 | D-05_File_Architecture_v1.0.md | v1.0 | Active |
 | D-06_Revision_Control_v1.0.md | v1.0 | Active |
-| D-07_Folder_Map_v1.0.md | v1.0 | Active |
+| D-07_Folder_Map_v1.1.md | v1.1 | Active |
 | D-08_MCP_Access_Protocol_v1.0.md | v1.0 | Active |
 | D-09_Quote_Engine_v1.0.md | v1.0 | Active |
 | D-Master_Build_v1.0.md | v1.0 | Active |

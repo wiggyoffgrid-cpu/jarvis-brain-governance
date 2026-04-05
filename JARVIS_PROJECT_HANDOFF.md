@@ -1,6 +1,6 @@
 # PROJECT JARVIS — SESSION HANDOFF
 
-**Updated:** April 4, 2026 (end of session — all governance docs, handoffs, and memory aligned)
+**Updated:** April 5, 2026 (GitHub publishing mirror documented; D-02 filename aligned to v1.3; D-07 bumped to v1.1; D-04 bumped to v1.1; Google Search Console + sitemap registered)
 **Previous session:** April 4, 2026 (evening — infrastructure buildout + quote engine start)
 **Authority:** Wiggy (Eric Legault)
 
@@ -22,12 +22,12 @@ The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines 
 |-----|------|---------|---------|
 | D-00 | Domain Structure | v1.0 | Master map of all 26 domains across 4 authority tiers |
 | D-01 | Governance Charter | v1.0 | Authority model, standing orders, Three Authorities rule |
-| D-02 | Operational Index | v1.3 | Registry of every active file, card, and component |
+| D-02 | Operational Index | v1.3 | Registry of every active file, card, and component (filename + header aligned to v1.3 April 5) |
 | D-03 | Numbering Constitution | v1.0 | Permanent numbering rules, reserved ranges |
-| D-04 | Navigation Spine | v1.0 | How everything cross-references and connects |
+| D-04 | Navigation Spine | v1.1 | How everything cross-references and connects (extended April 5 to cover D-07, D-08, D-09, D-Master Build) |
 | D-05 | File Architecture | v1.0 | Naming rules, folder structure, card templates |
 | D-06 | Revision Control | v1.0 | Versioning, lock sequence, backup rules |
-| D-07 | Folder Map | v1.0 | Physical truth of what exists on disk |
+| D-07 | Folder Map | v1.1 | Physical truth of what exists on disk (extended April 5 — GitHub repo, APE subfolders, brain-root web files, governance ancillaries) |
 | D-08 | MCP Access Protocol | v1.0 | How AIs connect to the Jarvis Brain — MCP, tunnel, tiers — NEW April 4 |
 | D-09 | Quote Engine Playbook | v1.0 | AI Quote Engine — voice-to-PDF quote generation — NEW April 4 |
 
@@ -66,6 +66,12 @@ The Jarvis Brain is governed by the D-Series Compass. Nine governance doctrines 
 - Any AI with web_fetch can read the Jarvis Brain via this URL
 - Director Claude Web and Grossmann use this path
 - Tier 1 protection: /knowledge/people/ returns 403
+
+**Publishing & External Access (NEW April 5 — documented):**
+- **GitHub Publishing Mirror:** `D:\Jarvis\jarvis-brain-governance\` is a git-backed one-way publishing mirror of `D:\Jarvis\brain\governance\D-Series\`. Canonical is disk; repo is downstream. Never edit repo directly. Username: **wiggyoffgrid-cpu**.
+- **Google Search Console:** brain.wiggyoffgrid.com is verified via `D:\Jarvis\brain\google1686c194464aad5a.html` (permanent — do not delete).
+- **Sitemap:** `D:\Jarvis\brain\sitemap.xml` — published for Google indexing of brain.wiggyoffgrid.com (permanent).
+- **Grossmann Access:** Live tunnel access via brain.wiggyoffgrid.com failed due to a Google AI platform limitation on outbound fetches. Grossmann's working door is the PDF briefing packet at `D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.pdf` — delivered by Wiggy per request. Markdown source at `GROSSMANN_BRIEFING_PACKET.md`.
 
 **Mail Cart (still active):**
 - Location: D:\Jarvis\brain\mail_cart\
@@ -157,9 +163,10 @@ Inlaws folder split into 4 subfolders:
 ## BEAST DISK STATUS — POST CLEANUP
 
 ### D:\Jarvis\ Root (CLEAN)
-12 folders, 3 files. No debris. No orphans.
-- Folders: acks, brain, Dashboard, llama.cpp, llama.cpp.backup, logs, Mason, qlora, scripts, searxng, uploads, voices
+13 folders, 3 files. No debris. No orphans.
+- Folders: acks, brain, Dashboard, jarvis-brain-governance, llama.cpp, llama.cpp.backup, logs, Mason, qlora, scripts, searxng, uploads, voices
 - Files: jarvis_flask.py, system_prompt_v13.txt, DockerBootSequence.ps1
+- Note: `jarvis-brain-governance\` is the GitHub publishing mirror — canonical D-Series lives in `brain\governance\D-Series\`. Disk → repo only.
 
 ### D:\Jarvis\brain\ (CLEAN)
 Zero loose files in root. Subfolders only:
@@ -381,7 +388,13 @@ First full audit ran this session. Results:
 
 | Item | Path |
 |------|------|
-| D-Series governance | D:\Jarvis\brain\governance\D-Series\ |
+| D-Series governance (canonical) | D:\Jarvis\brain\governance\D-Series\ |
+| GitHub publishing mirror | D:\Jarvis\jarvis-brain-governance\ (username: wiggyoffgrid-cpu) |
+| Sitemap | D:\Jarvis\brain\sitemap.xml |
+| Google Search Console verify | D:\Jarvis\brain\google1686c194464aad5a.html |
+| Grossmann briefing (PDF) | D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.pdf |
+| Grossmann briefing (MD source) | D:\Jarvis\brain\governance\GROSSMANN_BRIEFING_PACKET.md |
+| Drive consolidation plan | D:\Jarvis\brain\governance\DRIVE_CONSOLIDATION_PLAN_v1.0.md |
 | Audit logs | D:\Jarvis\brain\governance\audit_logs\ |
 | Mail cart | D:\Jarvis\brain\mail_cart\ |
 | Flask app | D:\Jarvis\jarvis_flask.py |

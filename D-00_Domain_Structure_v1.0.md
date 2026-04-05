@@ -158,7 +158,7 @@ Location: H:\Koonie\, H:\Gordons Stable\, D:\Jarvis\scripts\
 ## Expansion Rules
 
 - D-08: MCP Access Protocol (Active v1.0) — three-door access model, tier-based security
-- D-09: Reserved for future governance doctrine
+- D-09: Quote Engine Playbook (Active v1.0)
 - D-MB: D-Master Build — Strategic Command Ledger (Active v1.0)
 - D-18 through D-19: Reserved for future Tier 2 domains
 - D-33 through D-39: Reserved for future Tier 3 domains
